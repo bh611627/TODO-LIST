@@ -1,0 +1,110 @@
+/* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+  /* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+  body {
+    background: linear-gradient(-45deg, #41B3A3, #85CDCA);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+/* Heading  */
+h1{
+  margin-top: 50px;
+  text-align: center;
+  color: #FFFBF1;
+  font-weight: 800;
+}
+/* This is an Input Div Container */
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+/* Todo List Container */
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 500px;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+}
+/* Date And Time */
+#date-time{
+  margin: 10px auto;
+}
+/* This os an Input Text For TODO LIST */
+#Task-Input{
+  height: 2.5em;
+  width: 20em;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 4px 0px black;
+  /* text-align: center; */
+}
+/* This is a Submit Button */
+#submit{
+  height: 2.5em;
+  width: 30px;
+  background-color: #E27D5F;
+  border-radius: 100%;
+  border: none;
+  box-shadow: 0px 0px 4px 0px black;
+  transition: all ease-in-out .2s;
+}
+#submit:hover{
+  transform: scale(1.1);
+  background-color: #da6a48;
+}
+/* Task Container Unorder List  */
+#task-unorder-list{
+  list-style: none;
+}#task-unorder-list > li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  height: fit-content;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+}
+/* This is a Delete Button */
+.delete{
+  font-size: 20px;
+  color: #FFFBF1;
+  border-radius: 100%;
+  background-color: #d83131;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 4px 0px black;
+  border: none;
+  transition: all ease-in-out .2s;
+}
+.delete:hover{
+  transform: scale(1.1);
+  background-color: rgb(194, 23, 23)
+}
