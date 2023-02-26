@@ -42,10 +42,13 @@ h1{
   backdrop-filter: blur(5px);
   border-radius: 10px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  color: rgb(28, 28, 30);
+  font-size: 18px;
 }
 /* Date And Time */
 #date-time{
-  margin: 10px auto;
+  color: rgb(28, 28, 30);
+  font-size: 18px;
 }
 /* This os an Input Text For TODO LIST */
 #Task-Input{
@@ -53,7 +56,7 @@ h1{
   width: 20em;
   border-radius: 10px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   outline: none;
   border: none;
   box-shadow: 0px 0px 4px 0px black;
@@ -61,8 +64,8 @@ h1{
 }
 /* This is a Submit Button */
 #submit{
-  height: 2.5em;
-  width: 30px;
+  padding: 8px;
+ font-size: 18px;
   background-color: #E27D5F;
   border-radius: 100%;
   border: none;
@@ -76,11 +79,13 @@ h1{
 /* Task Container Unorder List  */
 #task-unorder-list{
   list-style: none;
-}#task-unorder-list > li{
+}
+#task-unorder-list > li{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  word-wrap: anywhere;
   width: 400px;
   height: fit-content;
   padding: 10px;
@@ -92,19 +97,142 @@ h1{
 }
 /* This is a Delete Button */
 .delete{
-  font-size: 20px;
-  color: #FFFBF1;
-  border-radius: 100%;
-  background-color: #d83131;
-  height: 30px;
-  width: 30px;
+  font-size: 18px;
+  color: #d83131;
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0px 4px 0px black;
-  border: none;
   transition: all ease-in-out .2s;
+  text-decoration: underline;
 }
 .delete:hover{
   transform: scale(1.1);
-  background-color: rgb(194, 23, 23)
+  color: #FFFBF1;
+}
+/* This is a ReEdit Button */
+.edit{
+  font-size: 18px;
+  color: #da6a48;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out .2s;
+  text-decoration: underline;
+}
+.edit:hover{
+  transform: scale(1.1);
+  color: #FFFBF1;
+}
+
+
+/* Responsive For 510px*/
+@media only screen and (max-width: 510px) {
+  /* Todo List Container */
+.form{
+  margin: 18px auto;
+  width: 400px;
+  font-size: 16px;
+}
+/* This os an Input Text For TODO LIST */
+#Task-Input{
+  height: 2.3em;
+  width: 18em;
+  padding: 8px;
+  font-size: 16px;
+}
+#task-unorder-list > li{
+  width: 350px;
+  padding: 8px;
+  margin: 13px auto;
+}
+/* Submit Button */
+#submit{
+ padding: 8px;
+ font-size: 18px;
+}
+/* Date And Time */
+#date-time{
+  font-size: 16px;
+}
+/* This is a Delete Button */
+.delete{
+  font-size: 16px;
+}
+/* This is a ReEdit Button */
+.edit{
+  font-size: 16px;
+}
+}
+/* For 410PX */
+@media only screen and (max-width: 410px) {
+  /* Todo List Container */
+.form{
+  margin: 18px auto;
+  width: 350px;
+  font-size: 14px;
+}
+/* This os an Input Text For TODO LIST */
+#Task-Input{
+  height: 2.1em;
+  width: 17em;
+  padding: 8px;
+  font-size: 14px;
+}
+#task-unorder-list > li{
+  width: 300px;
+  padding: 8px;
+  margin: 13px auto;
+}
+/* Submit Button */
+#submit{
+  padding: 6px;
+  font-size: 14px;
+ }
+/* Date And Time */
+#date-time{
+  font-size: 14px;
+}
+/* This is a Delete Button */
+.delete{
+  font-size: 14px;
+}
+/* This is a ReEdit Button */
+.edit{
+  font-size: 14px;
+}
+}/* For 410PX */
+@media only screen and (max-width: 360px) {
+  /* Todo List Container */
+.form{
+  margin: 18px auto;
+  width: 300px;
+  font-size: 10px;
+}
+/* This os an Input Text For TODO LIST */
+#Task-Input{
+  height: 2em;
+  width: 15em;
+  padding: 8px;
+  font-size: 10px;
+}
+#task-unorder-list > li{
+  width: 250px;
+  padding: 8px;
+  margin: 13px auto;
+}
+/* Submit Button */
+#submit{
+  padding: 6px;
+  font-size: 10px;
+ }
+/* Date And Time */
+#date-time{
+  font-size: 10px;
+}
+/* This is a Delete Button */
+.delete{
+  font-size: 10px;
+}
+/* This is a ReEdit Button */
+.edit{
+  font-size: 10px;
+}
 }
